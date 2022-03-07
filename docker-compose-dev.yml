@@ -15,8 +15,8 @@ services:
 
   docker-react-test:
     container_name: docker-react-test
-    image: docker-react-jbp_docker-react-test
+    image: docker-react-jbp_docker-react-dev
     volumes:
-      - /.:/app
+      - .:/app
       - "/app/node_modules"
     command: ["npm", "run", "test"]
